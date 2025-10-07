@@ -1,0 +1,47 @@
+[
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Customers.csv",
+        "p_sink_folder" : "customers",
+        "p_filename" : "customers.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Product_Categories.csv",
+        "p_sink_folder" : "Product_categories",
+        "p_filename" : "Product_categories.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Product_Subcategories.csv",
+        "p_sink_folder" : "Subcategories",
+        "p_filename" : "Subcategories.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Products.csv",
+        "p_sink_folder" : "Products",
+        "p_filename" : "products.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Returns.csv",
+        "p_sink_folder" : "Returns",
+        "p_filename" : "Returns.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Sales_2015.csv",
+        "p_sink_folder" : "Sales_2015",
+        "p_filename" : "Sales_2015.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Sales_2016.csv",
+        "p_sink_folder" : "Sales_2016",
+        "p_filename" : "Sales_2016.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Sales_2017.csv",
+        "p_sink_folder" : "Sales_2017",
+        "p_filename" : "Sales_2017.csv"
+    },
+    {
+        "parameter_dataset" : "18bq1a0599/Azuredatalearning/refs/heads/main/AdventureWorks_Territories.csv",
+        "p_sink_folder" : "Territories",
+        "p_filename" : "Territories.csv"
+    }
+]
