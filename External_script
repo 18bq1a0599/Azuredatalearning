@@ -1,0 +1,33 @@
+create DATABASE SCOPED CREDENTIAL cred_rk
+WITH
+IDENTITY='Managed Identity'
+
+CREATE EXTERNAL DATA SOURCE source_silver 
+WITH
+(
+    Location ='https://projectlakepersonal.blob.core.windows.net/silver',
+    credential= cred_rk
+)
+
+CREATE EXTERNAL DATA SOURCE source_gold 
+WITH
+(
+    Location ='https://projectlakepersonal.blob.core.windows.net/gold',
+    CREDENTIAL= cred_rk
+)
+
+CREATE EXTERNAL FILE FORMAT format_parquet
+with
+(
+    FORMAT_TYPE = PARQUET,
+    DATA_COMPRESSION ='org.apache.hadoop.io.compress.SnappyCodec'
+)
+
+CREATE EXTERNAL TABLE gold.extsales
+WITH
+(
+    LOCATION ='extsales',
+    DATA_SOURCE=source_gold,
+    file_format=Format_parquet
+)AS 
+SELECT * FROM gold.sales
